@@ -1,0 +1,57 @@
+:root {
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#tower1 {
+    display: flex;  
+    flex-direction: column-reverse;  
+    align-items: center;
+    width: 10px;
+    height: 150px;
+    background-color: black;
+
+}
+
+#tower2 {
+    display: flex;  
+    flex-direction: column-reverse;  
+    align-items: center;
+}
+
+#tower3 {
+    display: flex;  
+    flex-direction: column-reverse;  
+    align-items: center;
+}
+
+
+.red {
+    width: 150px;
+    height: 20px;
+    background-color: red;
+
+}
+
+.green {
+    width: 130px;
+    height: 20px;
+    background-color: green;    
+}
+
+.blue {
+    width: 110px;
+    height: 20px;
+    background-color: blue;
+}
+
+.purple {
+    width: 90px;
+    height: 20px;
+    background-color: purple;
+}
