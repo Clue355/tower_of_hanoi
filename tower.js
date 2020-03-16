@@ -5,21 +5,12 @@ const moveRing = function (event) {
     tower.appendChild(copy);
 }
 
-let towerSelector = document.querySelector("#towerSelection")
-towerSelector.addEventListener('click', function(event) {
-   
-    }
-
-})
-
-
 
 let purple = document.querySelector("#ring4")
 purple.addEventListener('click', function(event) {
     const purpleRing = event.target;
     const towerTwo = document.querySelector("#tower2");
-    const ringCopy = purpleRing.cloneNode(true);
-    towerTwo.appendChild(ringCopy);
+    towerTwo.appendChild(purpleRing);
     
 })
 
@@ -27,8 +18,7 @@ let blue = document.querySelector("#ring3")
 blue.addEventListener('click', function(event) {
     const blueRing = event.target;
     const towerTwo = document.querySelector("#tower2");
-    const ringCopy = blueRing.cloneNode(true);
-    towerTwo.appendChild(ringCopy);
+    towerTwo.appendChild(blueRing);
     
 })
 
@@ -36,8 +26,7 @@ let green = document.querySelector("#ring2")
 green.addEventListener('click', function(event) {
     const greenRing = event.target;
     const towerTwo = document.querySelector("#tower2");
-    const ringCopy = greenRing.cloneNode(true);
-    towerTwo.appendChild(ringCopy);
+    towerTwo.appendChild(greenRing);
     
 })
 
@@ -45,7 +34,6 @@ let red = document.querySelector("#ring1")
 red.addEventListener('click', function(event) {
     const redRing = event.target;
     const towerTwo = document.querySelector("#tower2");
-    const ringCopy = redRing.cloneNode(true);
-    towerTwo.appendChild(ringCopy);
+    towerTwo.appendChild(redRing);
     
 })
