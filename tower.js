@@ -1,39 +1,21 @@
-const moveRing = function (event) {
-    const ring = event.target;
-    const tower = document.querySelector("#tower2");
-    const copy = ring.cloneNode(true);
-    tower.appendChild(copy);
+
+const selectRing = function (event) {
+    const selectedTower = event.currentTarget
+    let selectedDisk = selectedTower.lastElementChild
+    let disk = document.querySelector('.disk')
+    let holding = document.querySelector(".hand")
+    holding.appendChild(selectedDisk)
+    if (holding.contains(selectedDisk) === false) {
+        
+    } else {
+        selectedTower.appendChild(selectedDisk)
+    }
 }
 
+const tower1 = document.querySelector("#tower1")
+const tower2 = document.querySelector("#tower2")
+const tower3 = document.querySelector("#tower3")
 
-let purple = document.querySelector("#ring4")
-purple.addEventListener('click', function(event) {
-    const purpleRing = event.target;
-    const towerTwo = document.querySelector("#tower2");
-    towerTwo.appendChild(purpleRing);
-    
-})
-
-let blue = document.querySelector("#ring3")
-blue.addEventListener('click', function(event) {
-    const blueRing = event.target;
-    const towerTwo = document.querySelector("#tower2");
-    towerTwo.appendChild(blueRing);
-    
-})
-
-let green = document.querySelector("#ring2")
-green.addEventListener('click', function(event) {
-    const greenRing = event.target;
-    const towerTwo = document.querySelector("#tower2");
-    towerTwo.appendChild(greenRing);
-    
-})
-
-let red = document.querySelector("#ring1")
-red.addEventListener('click', function(event) {
-    const redRing = event.target;
-    const towerTwo = document.querySelector("#tower2");
-    towerTwo.appendChild(redRing);
-    
-})
+tower1.addEventListener('click', selectRing)
+tower2.addEventListener('click', selectRing)
+tower3.addEventListener('click', selectRing)
