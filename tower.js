@@ -5,11 +5,11 @@ const selectRing = function (event) {
     let disk = document.querySelector('.disk')
     let holding = document.querySelector(".hand")
     holding.appendChild(selectedDisk)
-    if (holding.contains(selectedDisk) === false) {
+    // if (holding.contains(selectedDisk) === false) {
         
-    } else {
-        selectedTower.appendChild(selectedDisk)
-    }
+    // } else {
+    //     selectedTower.appendChild(selectedDisk)
+    // }
 }
 
 const tower1 = document.querySelector("#tower1")
