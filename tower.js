@@ -16,7 +16,7 @@ const selectTower = function (event) {
             //   if (holding.lastElementChild.dataset.size < selectedTower.lastElementChild.dataset.size){//works
             // if (selectedTower.childNodes.length === 1 ){//works
             // if (selectedTower.ChildNodes.length === 1 || holding.lastElementChild.dataset.size < selectedTower.lastElementChild.dataset.size ){
-                if (selectedTower.childNodes.length === 1){
+                if (selectedTower.childNodes.length === 1 || selectedTower.childNodes.length === 5){
 
                selectedTower.appendChild(holding.lastElementChild)
                clickBehavior = "pick"
@@ -31,7 +31,7 @@ const selectTower = function (event) {
                     alert("You Win!!!")
                     
                 }
-             } else clickBehavior = "drop"
+             } else clickBehavior = "pick"
     } 
 }
 
