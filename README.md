@@ -3,7 +3,7 @@ Link to the website:
 **Referenced the demo from march 16 in the project**
 
 Project partners: 
-Carlos Luevano
+Carlos Luevano , 
 Darrell Purcell 
 
 process: 
