@@ -2,8 +2,9 @@
 const selectTower = function (event) {
     const selectedTower = event.currentTarget
     console.log(selectedTower)
-    let hand = document.querySelector('.hand')
-    let holding = document.querySelector(".hand")
+    // let hand = document.querySelector('.hand')
+    // let held = document.querySelector(".holding")
+    // let holding = document.querySelector(".hand")
     let selectedDisk = selectedTower.lastElementChild
     let currentHand = holding.lastElementChild
          if (clickBehavior === "pick"){
@@ -12,14 +13,25 @@ const selectTower = function (event) {
          clickBehavior = "drop";
          console.log(clickBehavior)
           } else if (clickBehavior === "drop") {
-            // if (selectedTower.childNodes.length === 0){
-               selectedTower.appendChild(hand.lastElementChild)
+            //   if (holding.lastElementChild.dataset.size < selectedTower.lastElementChild.dataset.size){//works
+            // if (selectedTower.childNodes.length === 1 ){//works
+            // if (selectedTower.ChildNodes.length === 1 || holding.lastElementChild.dataset.size < selectedTower.lastElementChild.dataset.size ){
+                if (selectedTower.childNodes.length === 1){
+
+               selectedTower.appendChild(holding.lastElementChild)
                clickBehavior = "pick"
-               if (tower3.childElementCount >= 4) {
-                alert("You Win!")
-                return; 
+            //    if (tower3.childElementCount >= 4) {
+            //     alert("You Win!")
+            //     return; 
+            //     }
+             } else if (holding.lastElementChild.dataset.size < selectedTower.lastElementChild.dataset.size){
+                selectedTower.appendChild(holding.lastElementChild)
+                clickBehavior = "pick"
+                if (tower3.childElementCount >=4){
+                    alert("You Win!!!")
+                    
                 }
-           /* }*/ else clickBehavior = "pick"
+             } else clickBehavior = "drop"
     } 
 }
 
@@ -45,6 +57,8 @@ const selectTower = function (event) {
 // }    
 
 
+let holding = document.querySelector(".hand")
+let held = document.querySelector(".holding")
 
 
 let clickBehavior= "pick" //c
