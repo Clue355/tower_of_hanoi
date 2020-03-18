@@ -4,6 +4,7 @@ Link to the website:
 
 Project partners: 
 Carlos Luevano
+Darrell Purcell 
 
 process: 
 
