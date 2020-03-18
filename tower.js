@@ -31,7 +31,7 @@ const selectTower = function (event) {
                     alert("You Win!!!")
                     
                 }
-             } else clickBehavior = "pick"
+             } else clickBehavior = "drop"
     } 
 }
 
