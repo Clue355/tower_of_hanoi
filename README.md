@@ -1,13 +1,9 @@
-Link to the website: 
+###Tower of Hanoi
 
-**Referenced the demo from march 16 in the project**
+a game where you try to stack disks in a certain order
 
-Project partners: 
-Carlos Luevano , 
-Darrell Purcell 
+##Tech -HTML -CSS -JavaScript
 
-process: 
+##Live Demo
 
-1. Make the individual disks selectable **completed**
-2. move the disks between containers in a certain order
-3. Check if the disk are in the right order and container //win condition
+[Live Demo]
