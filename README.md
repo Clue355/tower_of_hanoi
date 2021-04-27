@@ -1,15 +1,15 @@
-***Tower of Hanoi***
+# Tower of Hanoi
 
-a game where you try to stack disks in a certain order
+## Description
 
-**Tech**
+A game where you stack disks in reverse order in the third box
 
--HTML 
-
--CSS 
-
--JavaScript
-
-**Live Demo**
+## Links
 
 [Live Demo](https://clue355.github.io/tower_of_hanoi/)
+
+## Technologies Used
+
+HTML CSS Javascript
+
+
